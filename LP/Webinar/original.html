@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>%%title%%</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="">
+<meta name="description" content="%%description%%">
+<meta name="keywords" content="">
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet">
+<link rel="shortcut icon" href="https://www.pacb.com/favicon.ico">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1th1/1652/252068/bootstrap.min.css" rel="stylesheet">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tgt/1652/252062/animate.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tgp/1652/252058/slick.css" rel="stylesheet">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1th5/1652/252072/magnific_popup.css" rel="stylesheet">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tgy/1652/252066/event.css" rel="stylesheet">
+<link href="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1th3/1652/252070/green.css" rel="stylesheet">
+<script src="https://use.fontawesome.com/7eb604a557.js"></script>
+<style type="text/css">
+::-webkit-input-placeholder {
+ color:#ffffff;
+}
+  :-moz-placeholder {
+ / Firefox 18- / color:#ffffff;
+}
+  ::-moz-placeholder {
+ / Firefox 19+ / color:#ffffff;
+}
+  :-ms-input-placeholder {
+ color:#ffffff;
+}
+form.form .pd-radio .value span, form.form .pd-checkbox .value span {
+    display: block !important;
+    text-align: left;
+}
+.red-background, form.form p.errors {
+    background-color: transparent !important;
+    color: #ff0909 !important;
+    font-weight: bold;
+    padding-left: .5em;
+    margin-bottom: 1em;
+}
+select:focus, textarea:focus, input:focus, input[type]:focus {
+    border-color: #ffffff !important;
+    outline: 0 none;
+}
+form.form p.required label, form.form span.required label {
+    background: none !important;
+}
+form.form {
+    background-color: transparent;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0 3px 0 0 !important;
+    line-height: normal;
+}
+form.form select {
+    width: 100% !important;
+}
+form.form p {
+    clear: none !important;
+}
+form.form p {
+    margin: 0 !important;
+    padding: 0 0 25px !important;
+}
+form.form p.form-field.error input, form.form p.form-field.error select, form.form p.form-field.error textarea.standard {
+    background-image: url(http://info.nuvemconsulting.com/l/173102/2017-07-19/cdmyj/173102/34565/field_error.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-color: #faeeee !important;
+    border-color: #ff0909;
+}
+form.form select {
+    background-color: #63687e !important;
+    border: solid 1px #63687e;
+    font-size: 16px;
+    color: #ffffff !important;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 6px;
+    min-height: 30px;
+    background: url(http://info.nuvemconsulting.com/l/173102/2017-04-20/96c4n/173102/27339/downcarat.png) no-repeat right 7px center;
+    background-size: 10px;
+}
+form.form input.text, form.form textarea.standard, form.form input.date {
+    background-color: #63687d;
+    border: solid 1px #63687d;
+    font-size: 16px;
+    color: #ffffff !important;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 3px 7px;
+}
+form.form textarea.standard {
+    width: 100% !important;
+    height: 150px !important;
+    overflow: auto;
+    float: none;
+}
+form.form input.text {
+    width: 100% !important;
+}
+form.form p label {
+    text-align: left !important;
+    font-size: 16px;
+    color: #ffffff !important;
+    font-weight: normal;
+}
+label.field-label {
+    display: block;
+}
+form.form p.submit input {
+    font-family: Arial, sans-serif;
+    background: #cadb44;
+    color: #233652;
+    transition: all .2s;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 105px;
+    -webkit-border-radius: 10px;
+    padding: 7px 30px;
+    font-weight: bold;
+    font-size: 19px;
+}
+form.form p.submit {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+form.form p.submit input {
+    margin-top: 10px !important;
+}
+form.form p label {
+    float: none;
+    text-align: left
+}
+form.form span.value {
+    margin-left: 0 !important;
+}
+form.form p.submit {
+    margin-left: 6px;
+}
+p.error.no-label {
+    display: none;
+}
+ @media (min-width: 0px) and (max-width: 768px) {
+form.form textarea.standard {
+    width: 100% !important;
+}
+</style>
+<style>
+.presentation a {
+    text-decoration: none;
+}
+.presentation-img {
+    padding-bottom: 12px;
+}
+code {
+    padding: 0px;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Maven Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1000px;
+}
+}
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.media-heading p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.yellow-button {
+    background-color: #cadb44;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 7px 14px;
+}
+/*Hero*/
+
+.header.parallax-bg {
+    background-size: auto;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    padding-top: 0px;
+    background: none;
+}
+.gradient-bg {
+    background-color: #0182be;
+    padding-top: 0;
+}
+.header h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.header p {
+    font-size: 22px;
+    font-weight: 400;
+}
+.banner-img p {
+    padding: 0;
+    margin: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.banner-img {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.hero-content {
+    padding: 30px 10px 0 40px;
+    color: #ffffff;
+}
+.form-wrap {
+    position: absolute;
+    z-index: 999;
+    top: 250px;
+    right: 30px;
+    padding: 30px 25px;
+    background-color: #233652;
+}
+.form-wrap p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+/*event-info*/
+
+.event-info h2 {
+    font-size: 33px;
+    font-weight: 500;
+    color: #233652;
+    padding-bottom: 10px;
+    font-family: 'Maven Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.event-info h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #231f20;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.event-content {
+    padding: 50px 30px 0 40px;
+}
+.event-content p{
+    font-size: 21px;
+    color:#233652;
+}
+.event-table td {
+    font-size: 25px;
+    border-color: transparent;
+    font-weight: 500;
+}
+h4.media-heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: #233652;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+h3.media-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #233652;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/*host*/
+	
+.host-content {
+    padding: 30px;
+    background-color: #e2e2e3;
+}
+.host-content h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #233652;
+    font-family: 'Enzo', 'Signika', sans-serif;
+}
+h3.media-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #233652;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.host-content p, ul {
+    font-size: 21px;
+    color:#233652;
+}
+/*speakers*/
+
+.speakers-content {
+    padding: 30px 30px 0 40px;
+}
+.speakers-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #233652;
+    font-family: 'Maven Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.speakers-content p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #233652;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.speakers-content p {
+    font-family: 'Enzo', 'Signika', sans-serif;
+}
+.speakers-content h4 {
+    font-size: 15px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+}
+.speakers .media {
+    margin-bottom: 15px;
+}
+.speaker-info p {
+    font-weight: normal;
+    margin-top: 0;
+    line-height: inherit;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.speaker-info {
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.speaker-info h4 {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+.below p{
+    font-size: 21px;
+    color:#233652;
+    padding: 20px 12px; 
+}
+/*developers*/
+
+.blue-bg {
+    position: relative;
+    padding: 25px;
+    z-index: 1;
+    background-color: #233652;
+    overflow: hidden;
+}
+.blue-bg:before {
+    position: absolute;
+    bottom: -83px;
+    right: -60px;
+    content: url("https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1ss9/1652/252012/artwork.png");
+    opacity: .5;
+    z-index: -1;
+}
+.blue-bg .speaker-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.developers-content {
+    padding: 50px 30px 0 40px;
+    color: #ffffff;
+}
+.developers h2 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.developers p {
+    font-size: 14px;
+}
+.developers-table td {
+    font-size: 14px;
+    padding: 0 0 10px;
+}
+/*presentation*/
+	
+a[aria-expanded="false"] img {
+    opacity: .5;
+}
+a[aria-expanded="false"] {
+    opacity: .5;
+}
+.presentation-content {
+    padding: 35px 30px 0 40px;
+}
+.presentation-content h2 {
+    color: #233652;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.ico-wrap {
+    margin-bottom: 30px;
+}
+.presentation-content h4 {
+    line-height: 1;
+    font-size: 15px;
+    margin-bottom: 5px;
+ font-family: font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.presentation-content p {
+    font-size: 14px;
+ font-family:font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.booth-wrap img, .presentations-wrap img {
+    max-width: 200px;
+    width: 100%;
+}
+.booth-wrap a, .presentations-wrap a {
+    color: #233652;
+}
+.booth-wrap img {
+    width: 100%;
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+img.arrow {
+    width: 21px;
+    max-width: 21px;
+    padding-bottom: 0;
+}
+/*apply*/
+.apply-bg {
+    background: url('https://programs.pacificbiosciences.com/l/1652/2019-04-01/3z7qhk/1652/270192/SMRT_Grant_bar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    padding: 0 35px;
+}
+.yellow-bg {
+    padding: 15px;
+    background-color: #cadb44;
+    height: 100%;
+}
+.apply h2 {
+    font-size: 19px;
+    color: #233652;
+    text-align: center;
+    font-weight: 500;
+    vertical-align: center;
+}
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item {
+    display: flex;
+    flex-direction: column;
+}
+.flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-white {
+    color: #ffffff;
+}
+.gradient-bg-content {
+    padding: 15px 55px 15px 0;
+}
+.yellow-button {
+    background-color: #cadb44;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #233652;
+    padding: 7px 14px;
+}
+/*footer*/
+footer {
+    text-align: center;
+    padding: 0 0 0;
+}
+.footer {
+    background-color: #706f75;
+    padding: 15px 35px 0;
+}
+.footer p {
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.2;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.footer .list-inline {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+.td-indent {
+    padding-left: 75px;
+}
+@media (max-width: 991px) {
+	p.footer-logo {
+		text-align: center;
+	}
+.form-wrap {
+    position: relative;
+    top: inherit;
+    right: inherit;
+}
+.form-pad {
+    padding: 30px 25px;
+}
+.hero-content {
+    padding: 40px 10px 0 20px;
+    color: #ffffff;
+}
+.gradient-bg {
+    padding-bottom: 15px;
+}
+.event-content {
+    padding: 50px 30px 0 20px;
+}
+.host-content {
+    padding: 30px 30px 0 20px;
+}
+.speakers-content {
+    padding: 30px 30px 0 20px;
+}
+.developers-content {
+    padding: 50px 30px 0 20px;
+}
+.presentation-content {
+    padding: 35px 30px 0 20px;
+}
+.ico-wrap {
+    margin-bottom: 0;
+}
+.gradient-bg-content {
+    padding: 20px;
+}
+.apply-bg {
+    padding: 0;
+}
+td {
+    text-align: left !important;
+}
+.row-flex {
+    display: block;
+}
+.text-muted1 {
+    color: #ffffff;
+}
+.booth-wrap h2, .presentations-wrap h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+img.arrow {
+    width: 17px;
+}
+.td-indent {
+    padding-left: 75px;
+}
+}
+</style>
+
+<!--[if lt IE 9]>
+  <script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tj1/1652/252074/respond.min.js"></script>
+  <![endif]-->
+
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tj3/1652/252076/modernizr.min.js"></script>
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tj5/1652/252078/pace.js"></script>
+</head>
+<body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
+<code pardot-region="Custom CSS" pardot-region-type="HTML">
+<style>		
+/*----remember to remove <![CDATA[ 	]]> before and after your style tags or you may see rendering issues----*/
+	
+/*hero*/
+.gradient-bg {
+	background-color: #ffffff;
+	background-image: url('https://storage.pardot.com/1652/381791/laptop_hero.png'); 
+	background-repeat: no-repeat;
+	background-size:cover;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+	
+/*yellow box*/
+	.yellow-bg {
+    background-color: #cadb44;
+}
+	
+/*yellow button*/
+	.yellow-button {
+    background-color: #cadb44;
+    color: #233652;
+}
+	
+/*----to hide sections change display:block to display:none (can't move but can hide)----*/
+	
+	/*hero image section*/
+	.banner-img {
+	display:block;
+	}
+	
+	/*hero gradient and form section*/ 
+	.gradient-bg {
+	display:block;
+	}
+	
+	/*event info section*/
+	section.event-info {
+	display:block
+	}
+	
+    /*host section*/
+	section.host {
+	display:block
+	}
+	
+	/*speakers section*/
+	section.speakers {
+	display:block
+	}
+	
+	/*developers section*/
+	section.developers {
+	display:block
+	}
+	
+	/*presentation section*/
+	section.presentation {
+	display:block
+	}
+		
+	/*apply section*/
+	section.apply {
+	display:block
+	}
+@media only screen and (max-width: 768px) {
+    .gradient-bg {
+        background-size:768px;}
+    .header h1 {
+        font-size: 34px;
+        margin-bottom: 0;
+    }
+    .form-pad {
+        padding: 0;
+    }
+    .event-content {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .gradient-bg {
+        background-size:425px;}
+    .header h1 {
+        font-size: 43px;
+        text-align: center;
+        color: #233652;
+        margin-bottom: 0;
+        padding: 10px 0 20px 0;
+    }
+    .mobi-hide {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .gradient-bg {
+        background-size:375px;}
+    .header h1 {
+        font-size: 37px;
+        text-align: center;
+        color: #233652;
+        margin-bottom: 0;
+        padding: 10px 0 20px 0;
+    }
+    .mobi-logo {
+        margin-top: -15px;
+    }
+    .event-info h2 {
+        font-size: 21px;
+    }
+    .event-table td {
+        font-size: 21px;
+    }
+    .td-indent {
+        padding-left: 65px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .gradient-bg {
+        background-size:320px;}
+    .header h1 {
+        font-size: 31px;
+        text-align: center;
+        color: #233652;
+        margin-bottom: 0;
+        padding: 10px 0 20px 0;
+    }
+    .mobi-logo {
+        margin-top: -20px;
+    }
+    .event-info h2 {
+        font-size: 21px;
+    }
+    .event-table td {
+        font-size: 18px;
+    }
+    .td-indent {
+        padding-left: 57px;
+    }
+}
+
+</style>
+</code>
+<header id="top" class="header parallax-bg">
+ <div class="container gradient-bg">
+  <div class="row">
+   <div class="col-md-8" style="text-align: left" >
+    <div class="hero-content" pardot-region="hero-content">
+     <p><img class="mobi-logo" src="https://storage.pardot.com/1652/308664/PacBio_ShortLogo_color_RGB_white_text_500.png" width="131" style="padding-bottom:20px;" alt=""/></p>
+     <h1>PACBIO WEBINAR SERIES</h1>
+     <p class="mobi-hide">&nbsp;</p><p class="mobi-hide">&nbsp;</p>
+    </div>
+   </div>
+   <div class="col-md-4" style="">
+    <div class="form-pad">
+     <div class="form-wrap">
+      <div pardot-region="above-form">
+       <p style="font-weight:bold">Complete the form to register for our workshop</p>
+      </div>
+      %%content%% </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+<section class="event-info">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-8" style="text-align: left" >
+    <div class="event-content" pardot-region="event-content">
+     <h2><span style="font-weight:bold;">Complete Genomes Within Reach:</span><br>Closing Bacterial Genomes from the Lakes of Minnesota to NYC Hospitals</h2>
+     <table class="event-table" width="100%" border="0" style="max-width: 540px;margin-bottom:20px;">
+      <tbody>
+       <tr>
+        <td width="400"><span style="color:#233652;padding-right: 10px;
+    vertical-align: top; padding-top: 10px; font-weight: bold;">Date:</span>Wednesday, March 6, 2019</td>
+       </tr>
+       <tr>
+        <td><span style="color:#233652;padding-right: 10px;
+    vertical-align: top;font-weight: bold;">Time:</span>9:00 a.m. PST</td></tr>
+        <tr><td class="td-indent">12:00 p.m. EST</td></tr>
+        <tr><td class="td-indent">5:00 p.m. GMT</td>
+       </tr>
+      </tbody>
+     </table>
+     <p>Highly accurate, closed bacterial genomes allow you to see both the SNPs and structural variations that drive the biology that matters to you, including AMR and virulence in clinical applications and metabolic adaptations in environmental isolates. With PacBio sequencing you can assemble through repetitive regions to reveal hidden biology, including insertion sequence elements and synthetic gene clusters. </p><br>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="host">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-8">
+    <div class="host-content" pardot-region="host-content">
+     <p>Join our speakers as they share the latest advances in Single Molecule, Real-Time (SMRT) Sequencing, including:</p>
+     <ul>
+        <li style="padding-bottom: 10px;">Details of the newly updated microbial whole genome sequencing pipeline, which leverages the multiplexing capabilities of the Sequel System to provide PacBio genomes at lower cost</li>
+        <li style="padding-bottom: 10px;">New insights into the ecophysiology of Minnesota microbes using long-read sequencing</li>
+        <li style="padding-bottom: 10px;">An understanding of how whole genome sequencing is used in pathogen surveillance programs at hospitals</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="host">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="host-content" pardot-region="host-content2">
+     <p>Join our speakers as they share the latest advances in Single Molecule, Real-Time (SMRT) Sequencing, including:</p>
+     <ul>
+        <li style="padding-bottom: 10px;">Details of the newly updated microbial whole genome sequencing pipeline, which leverages the multiplexing capabilities of the Sequel System to provide PacBio genomes at lower cost</li>
+        <li style="padding-bottom: 10px;">New insights into the ecophysiology of Minnesota microbes using long-read sequencing</li>
+        <li style="padding-bottom: 10px;">An understanding of how whole genome sequencing is used in pathogen surveillance programs at hospitals</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="speakers">
+ <div class="container">
+  <div class="speakers-content" pardot-region="speaker-content">
+   <div class="row">
+    <div class="col-md-12" >
+     <h3> SPEAKERS </h3>
+    </div>
+   </div>
+   <div class="row">
+    <div class="clearfix">&nbsp;</div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307592/Ben.png" alt="..."> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Benjamin Auch, M.Sc.</h4>
+       <p style="margin-bottom:0;">Research Scientist Innovation Lab, University of Minnesota Genomics Center</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307596/Euan.jpg" alt="Andrew Clark"> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Cody Sheik, Ph.D.</h4>
+       <p style="margin-bottom:0;">Assistant Professor of Biology University of Minnesota Duluth</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307592/Ben.png" alt="..."> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Benjamin Auch, M.Sc.</h4>
+       <p style="margin-bottom:0;">Research Scientist Innovation Lab, University of Minnesota Genomics Center</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307596/Euan.jpg" alt="Andrew Clark"> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Cody Sheik, Ph.D.</h4>
+       <p style="margin-bottom:0;">Assistant Professor of Biology University of Minnesota Duluth</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307592/Ben.png" alt="..."> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Benjamin Auch, M.Sc.</h4>
+       <p style="margin-bottom:0;">Research Scientist Innovation Lab, University of Minnesota Genomics Center</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307596/Euan.jpg" alt="Andrew Clark"> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Cody Sheik, Ph.D.</h4>
+       <p style="margin-bottom:0;">Assistant Professor of Biology University of Minnesota Duluth</p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-6 speaker-box">
+     <div class="media">
+      <div class="media-left"> <a href="#"> <img class="media-object" style="width:100px; height:100px;" src="https://storage.pardot.com/1652/307598/guy.jpg" alt="Andrew Clark"> </a> </div>
+      <div class="media-body">
+       <h4 class="media-heading" style="margin-bottom:5px;">Harm van Bakel, Ph.D.</h4>
+       <p style="margin-bottom:0;">Assistant Professor of Genetics and Genomic Sciences Icahn School of Medicine at Mount Sinai</p>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="below"><p>We look forward to your participation as you learn about SMRT Sequencing and the new, lower-cost option for generating PacBio microbial genomes on the Sequel System.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+  <div class="row ">
+   <div class="col-md-12">
+    <div class="footer" pardot-region="footer">
+     <div class="row">
+      <div class="col-md-1">
+       <p class="footer-logo"><img src="http://www.pacb.com/wp-content/uploads/2017_PB_Bug_white.png" style="max-width: 50px; padding-bottom:20px;" alt=""></p>
+      </div>
+      <div class="col-md-8">
+       <p style="padding-bottom:15px;">Pacific Biosciences of California, Inc. 1305 O'Brien Dr., Menlo Park, CA 94025<br>
+        For Research Use Only. Not for use in diagnostic procedures.<br>
+        &copy; Copyright 
+        <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+            </script> by Pacific Biosciences of California, Inc. All rights reserved.<br>
+        <a href="#" target="_blank">Update Profile</a> &nbsp; | &nbsp; <a href="#" target="_blank">Unsubscribe</a> &nbsp; | &nbsp; <a href="http://www.pacb.com/legal-and-trademarks/site-usage/" target="_blank">Legal & Trademarks</a></p>
+      </div>
+      <div class="col-md-3">
+       <ul class="list-inline" style="padding-bottom:15px;padding-top:5px;">
+        <li><a href="https://twitter.com/pacbio" class="twitter"><img src="https://programs.pacificbiosciences.com/l/1652/2016-12-06/3rc6w3/1652/183568/icon_footer_twitter.png" style="max-width: 50px;" alt=""></a></li>
+        <li><a href="https://www.linkedin.com/company/pacific-biosciences" class="linkedin"><img src="https://programs.pacificbiosciences.com/l/1652/2016-12-06/3rc6vy/1652/183564/icon_footer_linkedin.png" style="max-width: 50px;" alt=""></a></li>
+        <li><a href="https://www.youtube.com/user/PacificBiosciences" class="youtube"><img src="https://programs.pacificbiosciences.com/l/1652/2016-12-06/3rc6w5/1652/183570/icon_footer_youtube.png" style="max-width: 50px;" alt=""></a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</footer>
+<a href="#top" class="back_to_top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<div class="modal fade" id="register-now" tabindex="-1" role="dialog" aria-labelledby="register-now-label">
+ <div class="modal-dialog modal-sm" role="document">
+  <div class="modal-content">
+   <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title text-center" id="register-now-label">Event Registration </h4>
+   </div>
+   <div class="modal-body">
+    <div class="registration-form"> %%content%% </div>
+   </div>
+  </div>
+ </div>
+</div>
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tj9/1652/252082/jquery.min.js"></script> 
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tjc/1652/252084/bootstrap.min.js"></script> 
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tjk/1652/252090/nicescroll.js"></script> 
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tjh/1652/252088/parallax.js"></script> 
+<script src="https://programs.pacificbiosciences.com/l/1652/2019-02-11/3z1tjf/1652/252086/main.js"></script> 
+<script>
+var $myGroup = $('#myGroup');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+$myGroup.find('.collapse.in').collapse('hide');
+});			
+
+	</script> 
+<script>
+  var labels = document.querySelectorAll("p.pd-text label, p.pd-select label, p.pd-textarea label");
+    var i = labels.length;
+    while (i--) {
+    var label = labels.item(i);
+    var text = label.textContent;
+    label.parentNode.classList.contains("required") && (text += "*");
+    var nextElement = label.nextElementSibling;
+      // This is what I changed:
+     if(nextElement){
+       if (nextElement.tagName == 'SELECT') {
+        nextElement.options[0].text = text;
+       } else {
+        nextElement.setAttribute("placeholder", text);
+       }
+     label.parentNode.removeChild(label);
+     }
+  }
+var elements = document.querySelectorAll('.errors, .no-label');
+Array.prototype.forEach.call(elements, function(el, i) {
+el.parentNode.removeChild(el);
+});
+ </script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+<script type="text/javascript" src="http://jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
+</body>
+</html>
